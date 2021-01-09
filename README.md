@@ -1,4 +1,4 @@
-# Animate-cube
+# Animate-cube - CSS3
 
 Min-project animation 3D cube only using HTML5 & CSS3
 
