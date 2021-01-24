@@ -1,6 +1,6 @@
 # Animate-cube - CSS3
 
-Min-project animation 3D cube only using HTML5 & CSS3
+min-project animation 3D cube only using HTML5 & CSS3
 
 [Access My Project](https://jelsonjay.github.io/animate-cube/)
 
