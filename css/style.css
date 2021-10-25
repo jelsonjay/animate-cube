@@ -1,68 +1,77 @@
 * {
-    margin: 0;
-    padding: 0;
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
 }
-body{
-background-color: aqua;    
+:root {
+	--clr-bg: hsl(180, 100%, 50%);
+	--clr-chocolate: hsl(25, 75%, 47%);
 }
-img{
-width: 400px;
-height: 400px;
+body {
+	background-color: var(--clr-bg);
+}
+img {
+	width: 400px;
+	height: 400px;
 }
 .main {
-width: 400px;
-height: 400px;
-margin: 200px auto;
-perspective: 800px;
+	width: 400px;
+	height: 400px;
+	margin: 200px auto;
+	perspective: 800px;
 }
-.heros{
-width:400px;
-transform-style: preserve-3d;
-color: chartreuse;
-cursor: pointer;
-font:80px impact;
-text-align: center;
-animation: cube 15s linear infinite;
+h1 {
+	text-align: center;
+	padding: 2rem;
+	font-size: 3rem;
 }
-.heros div{
-position: absolute;
-width: 400px;
-height: 400px;
-opacity: .8;
+.heros {
+	width: 400px;
+	transform-style: preserve-3d;
+	cursor: pointer;
+	font: 80px impact;
+	text-align: center;
+	animation: cube 15s linear infinite;
 }
-.html5{
-background-color: chocolate;
-transform: translateZ(200px);
+.heros div {
+	position: absolute;
+	width: 400px;
+	height: 400px;
+	opacity: 0.8;
 }
-.css{
-background-color: chocolate;
-transform:rotateY(180deg) translateZ(200px);
+.html5 {
+	background-color: var(--clr-chocolate);
+	transform: translateZ(200px);
 }
-.jquery{
-background-color: chocolate;
-transform:rotateX(90deg) translateY(200px);
-transform-origin:bottom;
+.css {
+	background-color: var(--clr-chocolate);
+	transform: rotateY(180deg) translateZ(200px);
+}
+.jquery {
+	background-color: var(--clr-chocolate);
+	transform: rotateX(90deg) translateY(200px);
+	transform-origin: bottom;
 }
 .react {
-background-color: chocolate;
-transform:rotateX(-90deg) translateY(-200px);
-transform-origin:top;
+	background-color: var(--clr-chocolate);
+	transform: rotateX(-90deg) translateY(-200px);
+	transform-origin: top;
 }
-.js{
-background-color: chocolate;
-transform:rotateY(-90deg) translateX(-200px);
-transform-origin: left;
+.js {
+	background-color: var(--clr-chocolate);
+	transform: rotateY(-90deg) translateX(-200px);
+	transform-origin: left;
 }
-.node{
-background-color: chocolate;
-transform:rotateY(90deg) translateX(200px);
-transform-origin: right;
+.node {
+	background-color: var(--clr-chocolate);
+	transform: rotateY(90deg) translateX(200px);
+	transform-origin: right;
 }
-@keyframes cube{
-0%{
-transform: rotateY(0deg);
-}
-100% {
-transform:rotateY(360deg);
-}
+@keyframes cube {
+	0% {
+		transform: rotateY(0deg);
+	}
+	100% {
+		transform: rotateY(360deg);
+	}
 }
